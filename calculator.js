@@ -9,8 +9,8 @@ function newRow() {
         <td>A${rowCount}</td>
         <td><input type="text" class="input-box weight" /></td>
         <td>
-            <input type="text" class="input-box small grade" oninput="updatePercentage(this)" /> / 
-            <input type="text" class="input-box small total" oninput="updatePercentage(this)" />
+            <input type="text" class="input-box small grade" oninput="updatePercent(this)" /> / 
+            <input type="text" class="input-box small total" oninput="updatePercent(this)" />
         </td>
         <td class="percent"></td>
     `;
