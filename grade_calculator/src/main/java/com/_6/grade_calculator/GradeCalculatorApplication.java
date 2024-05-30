@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GradeCalculatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GradeCalculatorApplication.class, args);
+		SpringApplication.run(primarySource:GradeCalculatorApplication.class, args);
 	}
 
 }
