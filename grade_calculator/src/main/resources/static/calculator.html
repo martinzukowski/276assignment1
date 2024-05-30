@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <div class="island">
+            <h2 class="activities-header">Activities</h2>
+            <h3>Give grades to the numeric activities</h3>
+            <table id="activitiesTable"> <!--get table cells labeled-->
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th>Percent</th>
+                    </tr>
+                </thead><!--initialized to two activities-->
+                <tbody>
+                    <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input type="text" class="input-box weight" /></td>
+                        <td>
+                            <input type="text" class="input-box small grade" oninput="updatePercent(this)" /> / 
+                            <input type="text" class="input-box small total" oninput="updatePercent(this)" />
+                        </td>
+                        <td class="percent"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input type="text" class="input-box weight" /></td>
+                        <td>
+                            <input type="text" class="input-box small grade" oninput="updatePercent(this)" /> / 
+                            <input type="text" class="input-box small total" oninput="updatePercent(this)" />
+                        </td>
+                        <td class="percent"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--button work and result-->
+            <button class="add-row-btn" onclick="newRow()">Add Row</button>
+            <h2>Result</h2>
+            <div id="result"></div>
+            <div class="result-buttons">
+                <button class="calc-btn" onclick="calculateWeighted()">Weighted</button>
+                <button class="calc-btn" onclick="calculateMean()">Mean</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

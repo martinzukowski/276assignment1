@@ -1,0 +1,124 @@
+body { /*background*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #580000;  
+}
+
+.container {/*white space where all of it is */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.container::before, .container::after { /*dark grey strips*/
+    content: "";
+    display: block;
+    height: 20px; 
+    width: 100%;
+    background-color: #333333; 
+    position: absolute;
+    left: 0;
+}
+
+.container::before {
+    top: 0;
+}
+
+.container::after {
+    bottom: 0;
+}
+
+h1 { /*Title*/
+    text-align: left; 
+    color: #000000;
+}
+
+.activities-header {
+    color: #8B0000; 
+    margin-top: 10px;
+}
+
+h3 {
+    color: #555555;
+    margin-top: 10px;
+    font-size: 1em; 
+}
+
+.island {/*off white island the table is on*/
+    background-color: #e7e7e0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black; 
+}
+
+th, td { /*table cells*/
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button.add-row-btn {/*add row*/
+    display: block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #ffffff; 
+    color: #000000;
+    border: 1px solid #000000; 
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+button.add-row-btn:hover {
+    background-color: #e0e0e0; 
+}
+
+.result-buttons { /*red buttons for weight and mean*/
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.calc-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #8B0000; 
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.calc-btn:hover {
+    background-color: #660000; 
+}
+
+.input-box { /*input boxes*/
+    width: 70px; 
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0; 
+    border-radius: 5px; 
+}
+
+.input-box.small {
+    width: 30px; 
+    margin: 0 2px; 
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px; 
+}
